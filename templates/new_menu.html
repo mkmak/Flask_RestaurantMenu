@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Menu</title>
+    </head>
+    <body>
+        <h1>New Menu Item</h1>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name"></tr></td>
+                </tr>
+                <tr>
+                    <td>Course (Optional)</td>
+                    <td><input type="text" name="course"></td>
+                </tr>
+                <tr>
+                    <td>Description (Optional)</td>
+                    <td><textarea name="description" id="" cols="50" rows="5">{{ description }}</textarea></td>
+                </tr>
+                <tr>
+                    <td>Price (Optional)</td>
+                    <td><input type="text" name="price"></td>
+                </tr>
+            </table>
+            <span style="color: red;">{{ error_msg }}</span>
+            <br>
+            <input type="submit" value="Create">
+            <a href="{{ url_for('restaurantMenu', restaurant_id = restaurant_id) }}">Cancel</a>
+        </form>
+    </body>
+</html>

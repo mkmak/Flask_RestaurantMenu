@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Menu Item</title>
+    </head>
+    <body>
+        <h1>Edit Menu Item</h1>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name" value="{{ name }}"></td>
+                </tr>
+                <tr>
+                    <td>Course</td>
+                    <td><input type="text" name="course" value="{{ course }}"></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td><textarea name="description" id="" cols="50" rows="5">{{ description }}</textarea></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td><input type="text" name="price" value="{{ price }}"></td>
+                </tr>
+            </table>
+            <span style="color: red;">{{ error_msg }}</span>
+            <br>
+            <input type="submit" value="Edit">
+            <a href="{{ url_for('restaurantMenu', restaurant_id = restaurant_id) }}">Cancel</a>
+        </form>
+    </body>
+</html>

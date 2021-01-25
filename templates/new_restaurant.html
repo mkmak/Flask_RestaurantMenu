@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Restaurant</title>
+    </head>
+    <body>
+        <h1>Create a New Restaurant</h1>
+        <form action="" method="post">
+            Name: <input type="text" name="name">
+            <div style="color: red;">{{ error_msg }}</div>
+            <br>
+            <input type="submit" value="Create">
+            <a href="{{ url_for('restaurants') }}">Cancel</a>
+        </form>
+    </body>
+</html>
