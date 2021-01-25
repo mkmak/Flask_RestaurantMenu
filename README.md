@@ -7,6 +7,6 @@ CRUD = CREATE, READ, UPDATE, DELETE
 
 "webserver.py" uses the python's http.server library to implement the restaurants CRUD operations.
 
-"project.py" uses the Flask framework instead of http.server library. It is more convenience and organized. It contains implementation of restaurants and each restaurant's menu items CRUD operations.
+"project.py" uses the Flask framework instead of http.server library. It is more convenience and organized. It contains implementation of restaurants and each restaurant's menu items CRUD operations. JSON data can also retrieve through API endpoints.
 
 "populate_menu.py" is simply a script to populate the database with data.
